@@ -29,7 +29,12 @@ app.put('users/1', (req, res) => {
   res.json(users)
 })
 
+app.delete('users/1', function (req, res) {
+  res.send('Deleted')
+})
+
 /* END - create routes here */
+
 
 app.listen(port, () =>
   console.log(`Example app listening on port ${port}!`))
